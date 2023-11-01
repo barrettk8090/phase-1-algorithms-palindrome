@@ -1,9 +1,23 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  const reversedWord = word.split('').reverse().join('');
+
+  if (word === reversedWord){
+    return true;
+  }
+  else{
+    return false;
+  }
+
 }
 
 /* 
-  Add your pseudocode here
+  take an input of a word 
+
+  initialize a variable called reversedWord
+
+  reverse the letters in the word so that the ending letters come first and the beginning letters come last
+
+  compare word and reverseWord - if they deeply equal one another, return true, otherwise return false 
 */
 
 /*
